@@ -16,12 +16,10 @@ import {
 export default TabNavigator({
             Login: {
                 screen: Login,
+                selected: false
             },
             Register: {
                 screen: Register,
-            },
-            Call: {
-                screen: Call,
             }
 })
 
