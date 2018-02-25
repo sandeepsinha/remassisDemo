@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import TabContent from './src/component/TabContent'
 import Register from './src/component/Register'
 import Login from './src/component/Login'
-import Header from './src/component/Header'
+import Faqs from './src/component/Faqs'
 import {
   Platform,
   StyleSheet,
@@ -24,6 +24,9 @@ const MyApp = DrawerNavigator({
   // For each screen that you can navigate to, create a new entry like this:
   Account: {
     screen: TabContent,
+  },
+  Faqs: {
+    screen: Faqs
   }
 }, {
     initialRouteName: 'Account',

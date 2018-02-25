@@ -1,5 +1,5 @@
 import React from 'react';
-import { TabNavigator } from 'react-navigation';
+import { TabNavigator, TabBarBottom } from 'react-navigation';
 
 import Login from './Login'
 import Register from './Register'
@@ -20,6 +20,26 @@ export default TabNavigator({
             },
             Register: {
                 screen: Register,
+            },
+            Call: {
+                screen: Call,
             }
-})
+
+},
+{
+    tabBarOptions: {
+      activeBackgroundColor: 'rgba(30,144,255,0.8)',
+      inactiveBackgroundColor: 'rgba(30,144,255,0.7)',
+      activeTintColor: 'white',
+      inactiveTintColor: 'white',
+      showIcon: false,
+      labelStyle: {
+        fontSize: 15
+      },
+    },
+    tabBarComponent: TabBarBottom,
+    tabBarPosition: 'bottom',
+    animationEnabled: true,
+    swipeEnabled: true,
+  })
 

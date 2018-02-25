@@ -16,18 +16,15 @@ class CustomHeader extends Component {
 }
 
 const styles = StyleSheet.create({
-	header: {
-        height:20,
-        width:80
-    },
     hamburger: {
         color: 'white',
-        paddingLeft: 10
+        paddingLeft: 10,
+        paddingTop: 10
     },
     header: {
         width:'100%',
-        height:30,
-        backgroundColor: 'black'
+        height:50,
+        backgroundColor: 'rgba(30,144,255,0.8)'
     }
 
 });
